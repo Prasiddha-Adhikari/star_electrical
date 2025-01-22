@@ -51,6 +51,30 @@ const Navbar = () => {
             Manufacturing
           </NavLink>
           <NavLink
+            to="/gallery"
+            className={({ isActive }) =>
+              `transition duration-300 ${
+                isActive
+                  ? 'text-orange-500 font-bold'
+                  : 'text-gray-600 hover:text-orange-500'
+              }`
+            }
+          >
+            Gallery
+          </NavLink>
+          <NavLink
+            to="/blog"
+            className={({ isActive }) =>
+              `transition duration-300 ${
+                isActive
+                  ? 'text-orange-500 font-bold'
+                  : 'text-gray-600 hover:text-orange-500'
+              }`
+            }
+          >
+            Blogs
+          </NavLink>
+          <NavLink
             to="/about-us"
             className={({ isActive }) =>
               `transition duration-300 ${
